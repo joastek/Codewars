@@ -57,3 +57,53 @@ function solution(str) {
   return str.split("").reverse().join("");
 }
 console.log(solution("numbers"));
+function squareSum(numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i] ** 2;
+  }
+  return sum;
+}
+
+console.log(squareSum([4]));
+
+////regex validate PIN code/////
+
+function validatePIN(pin) {
+  let sum = 0;
+  for (let i = 4; i === pin.length; i++) {
+    sum += pin[i];
+  }
+}
+
+console.log(validatePIN("11123"));
+
+const grow = (x) => x.reduce((a, b) => a * b);
+console.log(grow([2, 3]));
+
+function disemvowel(str) {
+  str = str.replace(/[aeiou]/gi, "");
+
+  return str;
+}
+
+console.log(disemvowel("This website is for losers LOL"));
+
+function greet(name) {
+  return `Hello, ${name} how are you doing today?`;
+}
+
+console.log(greet("jan"));
+
+// function friend(friends) {
+//   friends = friends.replace(/[aeiou]/gi, "");
+//   return friends;
+// }
+
+function friend(friends) {
+  return friends.filter(function (item) {
+    return item.length === 4;
+  });
+}
+
+console.log(friend(["Ryan", "Kieran", "Mark"]));
