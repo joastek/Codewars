@@ -107,3 +107,37 @@ function friend(friends) {
 }
 
 console.log(friend(["Ryan", "Kieran", "Mark"]));
+
+////////who like this?//////////
+const likes = (names, length = names.length) =>
+  length < 1
+    ? "no one like this"
+    : length < 2
+    ? `${names[0]} like this`
+    : length < 3
+    ? `${names[0]} and ${names[1]} like this`
+    : length < 4
+    ? `${names[0]},${names[1]} and ${names[2]} others like this`
+    : `${names[0]},${names[1]} and ${length - 2} others like this`;
+
+console.log(["Alex", "Jacob", "Mark", "Max"]);
+const name1 = ["Alex", "Jacob", "Mark", "Max"];
+
+const name2 = name1[0];
+const name3 = name1[1];
+const [x, y] = name1;
+console.log(x, y);
+
+////remove first and last character
+function removeChar(str, length = str.length - 1) {
+  return str.substring(1, length);
+}
+
+console.log(removeChar("eloquent"));
+
+//basic mathematic operations
+const myArray = ("+", 4, 7);
+
+eval(myArray.join(" "));
+
+console.log(myArray);
