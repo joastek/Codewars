@@ -57,7 +57,7 @@ function solution(str) {
   return str.split("").reverse().join("");
 }
 console.log(solution("numbers"));
-function squareSum(numbers) {
+function squareSum1(numbers) {
   let sum = 0;
   for (let i = 0; i < numbers.length; i++) {
     sum += numbers[i] ** 2;
@@ -65,7 +65,7 @@ function squareSum(numbers) {
   return sum;
 }
 
-console.log(squareSum([4]));
+console.log(squareSum1([4]));
 
 ////regex validate PIN code/////
 
@@ -135,9 +135,13 @@ function removeChar(str, length = str.length - 1) {
 
 console.log(removeChar("eloquent"));
 
-//basic mathematic operations
-const myArray = ("+", 4, 7);
-
-eval(myArray.join(" "));
-
-console.log(myArray);
+//Square(n) Sum
+// function squareSum(numbers) {}
+const squareSum = (x) => x.reduce((a, B) => a ** 2 + B ** 2);
+console.log(squareSum([1, 2]));
+console.log(squareSum([1, 2, 4, 6]));
+let sum = 0;
+for (let i = 0; i < numbers.length; i++) {
+  sum += numbers[i] ** 2;
+}
+return sum;
