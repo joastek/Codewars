@@ -137,11 +137,16 @@ console.log(removeChar("eloquent"));
 
 //Square(n) Sum
 // function squareSum(numbers) {}
-const squareSum = (x) => x.reduce((a, B) => a ** 2 + B ** 2);
-console.log(squareSum([1, 2]));
-console.log(squareSum([1, 2, 4, 6]));
-let sum = 0;
-for (let i = 0; i < numbers.length; i++) {
-  sum += numbers[i] ** 2;
-}
-return sum;
+// const squareSum = (x) => x.reduce((a, B) => a ** 2 + B ** 2);
+// console.log(squareSum([1, 2]));
+// console.log(squareSum([1, 2, 4, 6]));
+// let sum = 0;
+// for (let i = 0; i < numbers.length; i++) {
+//   sum += numbers[i] ** 2;
+// }
+// return sum;
+
+/////Credit Card Mask
+const maskify = (cc, num = 4, mask = "*") =>
+  ("" + cc).slice(0, -num).replace(/./g, mask) + ("" + cc);
+console.log(maskify("4556364607935616"));
