@@ -150,3 +150,20 @@ console.log(removeChar("eloquent"));
 const maskify = (cc, num = 4, mask = "*") =>
   ("" + cc).slice(0, -num).replace(/./g, mask) + ("" + cc);
 console.log(maskify("4556364607935616"));
+
+//Stop gninnipS My sdroW!
+const word = "hell";
+const spinWords = (string) => string.split("").reverse().join("");
+console.log(spinWords("Welcome"));
+function spinWords1(string) {
+  const words = string.split(" ");
+  console.log(words);
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length >= 5) {
+      words[i] = words[i].split("").reverse().join("");
+    }
+  }
+  return words.join(" ");
+}
+
+console.log(spinWords1("Welcome hell"));
