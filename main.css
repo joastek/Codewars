@@ -1,3 +1,7 @@
 .class {
-  color: red;
+  color: #ff14bd;
+}
+
+.row {
+  width: 100rem;
 }
