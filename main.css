@@ -39,3 +39,14 @@
 .row .col-2-of-3 {
   width: calc( 2 * ((100% - 2 * 15rem) / 3) + 15rem);
 }
+
+.box {
+  background-color: red;
+  width: 2rem;
+  height: 2rem;
+  transition: width 2s, height 4s;
+}
+
+.box:hover {
+  height: 10rem;
+}

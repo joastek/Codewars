@@ -47,3 +47,13 @@ $gutter-horizontal: 15rem;
     );
   }
 }
+
+.box {
+  background-color: red;
+  width: 2rem;
+  height: 2rem;
+  transition: width 2s, height 4s;
+}
+.box:hover {
+  height: 10rem;
+}
